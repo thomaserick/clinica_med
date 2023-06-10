@@ -1,0 +1,25 @@
+
+spring:
+  application:
+    name: clinica-med
+  datasource:
+    url: jdbc:postgresql://localhost:5432/clinica-med
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc.batch_size: 50
+        show_sql: true
+        format_sql: true
+  server:
+    port: 8089
+
+logging:
+  level:
+    root: info
+    org.springframework.web: debug
