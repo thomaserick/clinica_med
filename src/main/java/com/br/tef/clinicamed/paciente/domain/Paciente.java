@@ -1,6 +1,8 @@
-package com.br.tef.clinicamed.api.paciente;
+package com.br.tef.clinicamed.paciente.domain;
 
-import com.br.tef.clinicamed.api.endereco.Endereco;
+import com.br.tef.clinicamed.endereco.domain.Endereco;
+import com.br.tef.clinicamed.paciente.api.dto.AtualizarPacienteDTO;
+import com.br.tef.clinicamed.paciente.api.dto.PacienteDTO;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

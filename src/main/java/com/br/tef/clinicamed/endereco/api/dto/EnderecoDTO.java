@@ -1,4 +1,4 @@
-package com.br.tef.clinicamed.api.endereco;
+package com.br.tef.clinicamed.endereco.api.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

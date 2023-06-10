@@ -1,10 +1,10 @@
-package com.br.tef.clinicamed.api.controller;
+package com.br.tef.clinicamed.medico.api;
 
-import com.br.tef.clinicamed.api.paciente.AtualizarPacienteDTO;
-import com.br.tef.clinicamed.api.paciente.ListaPacienteDTO;
-import com.br.tef.clinicamed.api.paciente.Paciente;
-import com.br.tef.clinicamed.api.paciente.PacienteDTO;
-import com.br.tef.clinicamed.api.paciente.PacienteRepository;
+import com.br.tef.clinicamed.paciente.api.dto.AtualizarPacienteDTO;
+import com.br.tef.clinicamed.paciente.api.dto.ListaPacienteDTO;
+import com.br.tef.clinicamed.paciente.api.dto.PacienteDTO;
+import com.br.tef.clinicamed.paciente.domain.Paciente;
+import com.br.tef.clinicamed.paciente.domain.PacienteRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,6 @@
-package com.br.tef.clinicamed.api.paciente;
+package com.br.tef.clinicamed.paciente.api.dto;
+
+import com.br.tef.clinicamed.paciente.domain.Paciente;
 
 public record ListaPacienteDTO(Long id, String nome, String email, String cpf) {
 

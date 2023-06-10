@@ -1,11 +1,11 @@
-package com.br.tef.clinicamed.api.controller;
+package com.br.tef.clinicamed.paciente.api;
 
 
-import com.br.tef.clinicamed.api.medico.AtualizarMedicoDTO;
-import com.br.tef.clinicamed.api.medico.ListaMedicoDTO;
-import com.br.tef.clinicamed.api.medico.Medico;
-import com.br.tef.clinicamed.api.medico.MedicoDTO;
-import com.br.tef.clinicamed.api.medico.MedicoRepository;
+import com.br.tef.clinicamed.medico.api.dto.AtualizarMedicoDTO;
+import com.br.tef.clinicamed.medico.api.dto.ListaMedicoDTO;
+import com.br.tef.clinicamed.medico.api.dto.MedicoDTO;
+import com.br.tef.clinicamed.medico.domain.Medico;
+import com.br.tef.clinicamed.medico.domain.MedicoRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +51,7 @@ public class MedicoController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity delete(@PathVariable Long id) {
         var medico = medicoRepository.getReferenceById(id);

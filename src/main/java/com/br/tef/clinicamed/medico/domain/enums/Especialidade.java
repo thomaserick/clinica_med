@@ -1,4 +1,4 @@
-package com.br.tef.clinicamed.api.medico.enums;
+package com.br.tef.clinicamed.medico.domain.enums;
 
 public enum Especialidade {
     ORTOPEDIA,

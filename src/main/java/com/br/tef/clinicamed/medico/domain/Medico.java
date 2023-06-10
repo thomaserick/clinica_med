@@ -1,7 +1,9 @@
-package com.br.tef.clinicamed.api.medico;
+package com.br.tef.clinicamed.medico.domain;
 
-import com.br.tef.clinicamed.api.endereco.Endereco;
-import com.br.tef.clinicamed.api.medico.enums.Especialidade;
+import com.br.tef.clinicamed.endereco.domain.Endereco;
+import com.br.tef.clinicamed.medico.api.dto.AtualizarMedicoDTO;
+import com.br.tef.clinicamed.medico.api.dto.MedicoDTO;
+import com.br.tef.clinicamed.medico.domain.enums.Especialidade;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;

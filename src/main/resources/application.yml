@@ -20,3 +20,8 @@ logging:
   level:
     root: info
     org.springframework.web: debug
+
+
+server:
+  error:
+    include-stacktrace: never

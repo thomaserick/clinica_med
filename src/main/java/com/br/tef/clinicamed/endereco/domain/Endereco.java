@@ -1,5 +1,6 @@
-package com.br.tef.clinicamed.api.endereco;
+package com.br.tef.clinicamed.endereco.domain;
 
+import com.br.tef.clinicamed.endereco.api.dto.EnderecoDTO;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

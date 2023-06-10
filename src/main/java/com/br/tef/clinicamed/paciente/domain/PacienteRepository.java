@@ -1,4 +1,4 @@
-package com.br.tef.clinicamed.api.paciente;
+package com.br.tef.clinicamed.paciente.domain;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
