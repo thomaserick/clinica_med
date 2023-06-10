@@ -14,6 +14,13 @@ Spring boot 3 - App de gerenciamento da clinica
     - spring.data.web.pageable.size-parameter=tamanho
     - spring.data.web.sort.sort-parameter=ordem
 
+### Erros HTTPS
+
+- Cats
+    - https://http.cat/
+- Dogs
+    - https://http.dog/
+
 ## Adendo
 
 - link figma
