@@ -2,7 +2,6 @@ package com.br.tef.clinicamed.api.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -28,6 +27,30 @@ public class Endereco {
         this.cidade = dto.cidade();
         this.numero = dto.numero();
         this.complemento = dto.complemento();
+    }
+
+    public void atualizarDados(EnderecoDTO dto) {
+        if (dto.logradouro() != null) {
+            this.logradouro = dto.logradouro();
+        }
+        if (dto.bairro() != null) {
+            this.bairro = dto.bairro();
+        }
+        if (dto.cep() != null) {
+            this.cep = dto.cep();
+        }
+        if (dto.uf() != null) {
+            this.uf = dto.uf();
+        }
+        if (dto.cidade() != null) {
+            this.cidade = dto.cidade();
+        }
+        if (dto.numero() != null) {
+            this.numero = dto.numero();
+        }
+        if (dto.complemento() != null) {
+            this.complemento = dto.complemento();
+        }
     }
 
 }

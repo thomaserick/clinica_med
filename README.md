@@ -7,6 +7,13 @@ Spring boot 3 - App de gerenciamento da clinica
 - O comando serve para apagar na tabela do Flyway todas as migrations cuja execução falhou
     - ´delete from flyway_schema_history where success = 0;´
 
+### Spring
+
+- Traduzir nomes do pageable
+    - spring.data.web.pageable.page-parameter=pagina
+    - spring.data.web.pageable.size-parameter=tamanho
+    - spring.data.web.sort.sort-parameter=ordem
+
 ## Adendo
 
 - link figma
