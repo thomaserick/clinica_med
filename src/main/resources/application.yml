@@ -1,16 +1,13 @@
-
 spring:
   application:
     name: clinica-med
   datasource:
-    url: jdbc:postgresql://localhost:5432/clinica-med
+    url: jdbc:postgresql://localhost:5432/clinica-medica
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
     properties:
       hibernate:
         jdbc.batch_size: 50
