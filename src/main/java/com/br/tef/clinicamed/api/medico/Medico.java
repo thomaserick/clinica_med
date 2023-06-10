@@ -36,8 +36,10 @@ public class Medico {
     private Especialidade especialidade;
     @Embedded
     private Endereco endereco;
+    private Boolean ativo;
 
     public Medico(MedicoDTO dto) {
+        this.ativo = true;
         this.nome = dto.nome();
         this.email = dto.email();
         this.telefone = dto.telefone();
@@ -56,6 +58,10 @@ public class Medico {
         if (dto.endereco() != null) {
             this.endereco.atualizarDados(dto.endereco());
         }
+    }
+
+    public void delete() {
+        this.ativo = false;
     }
 
 }
