@@ -3,6 +3,7 @@ package com.br.tef.clinicamed.agendamento.api;
 
 import com.br.tef.clinicamed.agendamento.api.dto.AgendamentoConsultaDTO;
 import com.br.tef.clinicamed.agendamento.app.AgendamentoService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +18,7 @@ import java.beans.Transient;
 @RestController
 @RequestMapping("/agendamento")
 @AllArgsConstructor
+@SecurityRequirement(name = "bearer-key")
 public class AgendamentoController {
 
     private final AgendamentoService agendamentoService;

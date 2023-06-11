@@ -5,6 +5,7 @@ import com.br.tef.clinicamed.paciente.api.dto.ListaPacienteDTO;
 import com.br.tef.clinicamed.paciente.api.dto.PacienteDTO;
 import com.br.tef.clinicamed.paciente.domain.Paciente;
 import com.br.tef.clinicamed.paciente.domain.PacienteRepository;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("pacientes")
+@SecurityRequirement(name = "bearer-key")
 public class PacienteController {
 
     @Autowired
