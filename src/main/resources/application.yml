@@ -13,8 +13,7 @@ spring:
         jdbc.batch_size: 50
         show_sql: true
         format_sql: true
-  server:
-    port: 8089
+
 
 logging:
   level:
@@ -23,6 +22,7 @@ logging:
 
 
 server:
+  port: 8089
   error:
     include-stacktrace: never
 
