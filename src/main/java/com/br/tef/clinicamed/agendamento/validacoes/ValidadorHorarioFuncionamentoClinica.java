@@ -2,9 +2,11 @@ package com.br.tef.clinicamed.agendamento.validacoes;
 
 import com.br.tef.clinicamed.agendamento.api.dto.AgendamentoConsultaDTO;
 import jakarta.validation.ValidationException;
+import org.springframework.stereotype.Component;
 
 import java.time.DayOfWeek;
 
+@Component
 public class ValidadorHorarioFuncionamentoClinica implements ValidadorAgendamentoConsulta {
 
 

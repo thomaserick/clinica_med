@@ -9,7 +9,6 @@ import com.br.tef.clinicamed.medico.domain.Medico;
 import com.br.tef.clinicamed.medico.domain.MedicoRepository;
 import com.br.tef.clinicamed.paciente.domain.PacienteRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,8 +24,8 @@ public class AgendamentoService {
 
     private final PacienteRepository pacienteRepository;
 
-    @Autowired
-    private List<ValidadorAgendamentoConsulta> validadores;
+
+    private final List<ValidadorAgendamentoConsulta> validadores;
 
     public void agendar(AgendamentoConsultaDTO dto) {
 

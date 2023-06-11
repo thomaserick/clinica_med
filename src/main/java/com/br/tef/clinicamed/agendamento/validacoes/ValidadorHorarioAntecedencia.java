@@ -2,10 +2,13 @@ package com.br.tef.clinicamed.agendamento.validacoes;
 
 import com.br.tef.clinicamed.agendamento.api.dto.AgendamentoConsultaDTO;
 import jakarta.validation.ValidationException;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+
+@Component
 public class ValidadorHorarioAntecedencia implements ValidadorAgendamentoConsulta {
 
     @Override
