@@ -1,4 +1,4 @@
-package com.br.tef.clinicamed.paciente.api;
+package com.br.tef.clinicamed.medico.api;
 
 
 import com.br.tef.clinicamed.medico.api.dto.AtualizarMedicoDTO;
@@ -8,7 +8,7 @@ import com.br.tef.clinicamed.medico.domain.Medico;
 import com.br.tef.clinicamed.medico.domain.MedicoRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.http.ResponseEntity;
@@ -26,11 +26,10 @@ import java.beans.Transient;
 
 @RestController
 @RequestMapping("medicos")
+@AllArgsConstructor
 public class MedicoController {
 
-
-    @Autowired
-    private MedicoRepository medicoRepository;
+    private final MedicoRepository medicoRepository;
 
     @PostMapping
     @Transient

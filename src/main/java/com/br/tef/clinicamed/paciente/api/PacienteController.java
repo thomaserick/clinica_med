@@ -1,4 +1,4 @@
-package com.br.tef.clinicamed.medico.api;
+package com.br.tef.clinicamed.paciente.api;
 
 import com.br.tef.clinicamed.paciente.api.dto.AtualizarPacienteDTO;
 import com.br.tef.clinicamed.paciente.api.dto.ListaPacienteDTO;

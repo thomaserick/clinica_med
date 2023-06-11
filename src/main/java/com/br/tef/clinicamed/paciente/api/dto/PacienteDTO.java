@@ -13,7 +13,6 @@ public record PacienteDTO(
         @NotBlank
         @Email
         String email,
-
         @NotBlank
         String telefone,
         @NotBlank

@@ -2,6 +2,20 @@
 
 Spring boot 3 - App de gerenciamento da clinica
 
+### Desenvolvimento
+
+- API Rest;
+- CRUD (Create, Read, Update e Delete);
+- validações;
+- paginação e ordenação das informações;
+- boas práticas REST;
+- Tratar erros;
+- Autenticar e autorizar o controle de acesso com JWT.
+- Documentação API Swagger
+- Testes Automatizados
+- Build do projeto
+- Docker compose
+
 ### FlyWay
 
 - O comando serve para apagar na tabela do Flyway todas as migrations cuja execução falhou
