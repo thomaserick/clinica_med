@@ -25,3 +25,10 @@ logging:
 server:
   error:
     include-stacktrace: never
+
+application:
+  security:
+    jwt:
+      secret-key: 4cd06563-0f1e-44db-bd4c-ea92839347f0
+      expiration: 720 # minutes
+
